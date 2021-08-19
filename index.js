@@ -11,7 +11,7 @@ const aesjs = require('aes-js');
 const pbkdf2 = require('pbkdf2');
 
 // crypto for generating random cipher IV
-const crypto = require('crypto');
+const crypto = require('crypto-js');
 
 // encrypt text with AES-256 (CBC) using key derived from password argument
 const encryptText = (text, password) => {
